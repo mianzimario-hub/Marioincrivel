@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Syne', sans-serif;
+}
+
+:root {
+  --color-primary-yellow: #f59e0b;
+  --color-primary-red: #ef4444;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #0c0a09;
+  color: #fef3c7;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Custom Red & Yellow Mobile-first Scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(12, 10, 9, 0.85);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(239, 68, 68, 0.5), rgba(245, 158, 11, 0.5));
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgba(239, 68, 68, 0.9), rgba(245, 158, 11, 0.9));
+}
+
+@keyframes pulse-rec {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.9); }
+}
+
+.animate-rec-pulse {
+  animation: pulse-rec 1.6s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes float-reaction {
+  0% {
+    opacity: 0;
+    transform: translateY(15px) scale(0.7);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(-5px) scale(1.15);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(-70px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-110px) scale(0.75);
+  }
+}
+
+.animate-float-reaction {
+  animation: float-reaction 2.4s ease-out forwards;
+}
+
+@keyframes eq-pulse-1 {
+  0%, 100% { height: 20%; }
+  50% { height: 95%; }
+}
+@keyframes eq-pulse-2 {
+  0%, 100% { height: 65%; }
+  50% { height: 25%; }
+}
+@keyframes eq-pulse-3 {
+  0%, 100% { height: 35%; }
+  50% { height: 100%; }
+}
+@keyframes eq-pulse-4 {
+  0%, 100% { height: 80%; }
+  50% { height: 40%; }
+}
+
+.animate-eq-1 { animation: eq-pulse-1 1.1s ease-in-out infinite; }
+.animate-eq-2 { animation: eq-pulse-2 0.85s ease-in-out infinite; }
+.animate-eq-3 { animation: eq-pulse-3 1.35s ease-in-out infinite; }
+.animate-eq-4 { animation: eq-pulse-4 0.95s ease-in-out infinite; }
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 18s linear infinite;
+}
+
+/* Safe area insets for notched mobile devices */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 16px);
+}
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 12px);
+}
+
+

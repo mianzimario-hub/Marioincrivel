@@ -1,0 +1,56 @@
+{
+  "id": "/",
+  "name": "Miazoom - Bate-Papo & Cinema",
+  "short_name": "Miazoom",
+  "description": "Aplicativo de bate-papo em grupo, vídeo e cinema sincronizado com amigos para Android.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#0c0a09",
+  "background_color": "#0c0a09",
+  "lang": "pt-BR",
+  "categories": ["social", "entertainment", "video"],
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Iniciar Conversa",
+      "short_name": "Conversar",
+      "description": "Abrir nova sala de bate-papo em vídeo",
+      "url": "/?action=new-meeting",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Cinema com Amigos",
+      "short_name": "Cinema",
+      "description": "Assistir a vídeos sincronizados",
+      "url": "/?action=cinema",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    }
+  ]
+}

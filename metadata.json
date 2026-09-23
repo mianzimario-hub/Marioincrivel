@@ -1,0 +1,6 @@
+{
+  "name": "Miazoom",
+  "description": "Aplicativo de entretenimento e conversas em vídeo com bate-papo, cinema virtual sincronizado, reações divertidas e chamadas com a galera. Compatível com Android 8 até 15.",
+  "requestFramePermissions": ["camera", "microphone", "display-capture"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

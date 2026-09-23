@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGradMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c0f0a"/>
+      <stop offset="50%" stop-color="#120906"/>
+      <stop offset="100%" stop-color="#080504"/>
+    </linearGradient>
+    <linearGradient id="primaryGradMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#facc15"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Full bleed background for Android adaptive icon clipping -->
+  <rect width="512" height="512" fill="url(#bgGradMask)"/>
+
+  <!-- Inner Safe Zone Content (scaled within 80% diameter) -->
+  <g transform="translate(45, 45) scale(0.82)">
+    <rect x="70" y="70" width="280" height="280" rx="64" fill="url(#primaryGradMask)"/>
+    <g transform="translate(114, 120)">
+      <rect x="15" y="40" width="115" height="110" rx="26" fill="#0c0a09"/>
+      <path d="M135 68 L175 42 C181 38 188 42 188 49 L188 141 C188 148 181 152 175 148 L135 122 Z" fill="#0c0a09"/>
+      <polygon points="60,72 60,118 98,95" fill="#facc15"/>
+    </g>
+    <circle cx="190" cy="390" r="8" fill="#ef4444"/>
+    <circle cx="210" cy="390" r="8" fill="#f59e0b"/>
+    <circle cx="230" cy="390" r="8" fill="#facc15"/>
+  </g>
+</svg>

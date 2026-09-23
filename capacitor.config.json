@@ -1,0 +1,30 @@
+{
+  "appId": "com.miazoom.app",
+  "appName": "Miazoom",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https",
+    "cleartext": true
+  },
+  "android": {
+    "minSdkVersion": 26,
+    "targetSdkVersion": 35,
+    "backgroundColor": "#0c0a09",
+    "allowMixedContent": true,
+    "captureInput": true,
+    "webContentsDebuggingEnabled": true
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 1500,
+      "backgroundColor": "#0c0a09",
+      "showSpinner": false,
+      "androidScaleType": "CENTER_CROP"
+    },
+    "StatusBar": {
+      "backgroundColor": "#0c0a09",
+      "style": "DARK"
+    }
+  }
+}
